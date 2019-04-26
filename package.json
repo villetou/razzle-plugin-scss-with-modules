@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Use SCSS/SASS with modules in Razzle",
   "main": "index.js",
-  "repository": "",
+  "repository": "https://github.com/villetou/razzle-plugin-scss-with-modules",
   "author": "Ville Touronen <touronen@gmail.com>",
   "license": "MIT",
   "scripts": {
