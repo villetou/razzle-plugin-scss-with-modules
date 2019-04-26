@@ -104,7 +104,7 @@ module.exports = (
         ? [
             {
               loader: require.resolve('css-loader/locals'),
-              options: { ...options.css[constantEnv], modules: true },
+              options: { ...options.css[constantEnv], modules: true, localIdentName: '[local]__[hash:base64]' },
             },
             resolveUrlLoader,
             postCssLoader,
@@ -114,7 +114,7 @@ module.exports = (
             dev ? styleLoader : MiniCssExtractPlugin.loader,
             {
               loader: require.resolve('css-loader'),
-              options: { ...options.css[constantEnv], modules: true },
+              options: { ...options.css[constantEnv], modules: true, localIdentName: '[local]__[hash:base64]' },
             },
             postCssLoader,
             resolveUrlLoader,

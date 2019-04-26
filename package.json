@@ -1,10 +1,10 @@
 {
-  "name": "razzle-plugin-scss",
+  "name": "razzle-plugin-scss-with-modules",
   "version": "3.0.0",
-  "description": "Use SCSS/SASS with Razzle",
+  "description": "Use SCSS/SASS with modules in Razzle",
   "main": "index.js",
-  "repository": "git@github.com:jaredpalmer/razzle.git",
-  "author": "Ray Andrew <raydreww@gmail.com>",
+  "repository": "",
+  "author": "Ville Touronen <touronen@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "jest"
