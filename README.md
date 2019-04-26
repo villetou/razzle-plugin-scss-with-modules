@@ -1,6 +1,7 @@
 # razzle-plugin-scss-with-modules
+This package is a fork of Razzle's razzle-plugin-scss. The plugin adds support for [SCSS/SASS](https://sass-lang.com/) in Razzle with the support of SCSS modules, by using the `*.module.scss` extension.
 
-## Fork related things
+## Fork related
 The fork was made using this procedure to fork only a subdirectory of the [Razzle](https://github.com/jaredpalmer/razzle) project:
 https://stackoverflow.com/questions/24577084/forking-a-sub-directory-of-a-repository-on-github-and-making-it-part-of-my-own-r
 
