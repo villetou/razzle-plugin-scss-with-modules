@@ -99,7 +99,31 @@ module.exports = (
   config.module.rules = [
     ...config.module.rules,
     {
+      test: /\.module\.(sa|sc)ss$/,
+      use: isServer
+        ? [
+            {
+              loader: require.resolve('css-loader/locals'),
+              options: { ...options.css[constantEnv], modules: true },
+            },
+            resolveUrlLoader,
+            postCssLoader,
+            sassLoader,
+          ]
+        : [
+            dev ? styleLoader : MiniCssExtractPlugin.loader,
+            {
+              loader: require.resolve('css-loader'),
+              options: { ...options.css[constantEnv], modules: true },
+            },
+            postCssLoader,
+            resolveUrlLoader,
+            sassLoader,
+          ],
+    },
+    {
       test: /\.(sa|sc)ss$/,
+      exclude: /\.module\.(sa|sc)ss$/,
       use: isServer
         ? [
             {
