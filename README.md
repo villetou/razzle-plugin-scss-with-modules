@@ -1,3 +1,10 @@
+# razzle-plugin-scss-with-modules
+
+## Fork related things
+The fork was made using this procedure to fork only a subdirectory of the [Razzle](https://github.com/jaredpalmer/razzle) project:
+https://stackoverflow.com/questions/24577084/forking-a-sub-directory-of-a-repository-on-github-and-making-it-part-of-my-own-r
+
+# Original README
 # razzle-plugin-scss
 
 This package contains a plugin for using [SCSS/SASS](https://sass-lang.com/) with Razzle
